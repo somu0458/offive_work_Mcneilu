@@ -1,0 +1,76 @@
+<div class="container-fluid p-3" style="background-color:#ECEFF1">
+        <!-- ECEFF1 -->
+    <div class=" d-flex justify-content-between mb-3 pl-2  pr-3">
+            <form class=" ">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <div class="row">
+                        <button type="button" class="btn btn-warning btn-sm" style="margin: 5px;"><i class='fas fa-file-alt' style='font-size:20px; background-color: orange'></i>Add New</button>
+                        <button type="button" class="btn btn-outline-warning btn-sm" style="margin: 5px;"><i class="fas fa-cogs"></i>Configure</button>
+                        <button type="button" class="btn btn-outline-warning btn-sm" style="margin: 5px;"><i class="far fa-trash-alt"></i>Delete</button>
+                        <button type="button" class="btn btn-outline-warning btn-sm" style="margin: 5px;"><i class="fas fa-archive"></i>Archive</button>
+                  </div>
+    </div>
+    <div>
+
+<div class="card p-3">
+    <table class="table table-sm border  table-striped p-0">
+        <thead class="border" style="background-color:#e8eef2" >
+            <tr>
+                <th>CustomerName</th>
+                <th>Truck</th>
+                <th>Spec</th>
+                 <!-- <th>symbol</th> -->
+                <th>MixerSize</th>
+                <th>TagAxle</th>
+                <th>LastChanged</th>
+                <th>WB</th>
+                <th>CA</th>
+                <th>Boggle</th>
+                <th>Front</th>
+                <th>Rear</th>
+                <th>PusherAxle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let user of dataSource">
+            <td>{{user.CustomerName}}</td>
+            <td>{{user.Truck}}</td>
+            <td>{{user.Spec}}</td>
+            <!-- <td>{{user.symbol}}</td> -->
+            <td>{{user.MixerSize}}</td>
+            <td>{{user.TagAxle}}</td>
+            <td>{{user.LastChanged}}</td>
+            <td>{{user.WB}}</td>
+            <td>{{user.CA}}</td>
+            <td>{{user.Boggle}}</td>
+            <td>{{user.Front}}</td>
+            <td>{{user.Rear}}</td>
+            <td>{{user.PusherAxle}}</td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <div class="container">
+        <div class="col-sm-12">
+            <nav>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled"><a class="page-link" href=""><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item disabled"><a class="page-link" href=""><i class="fas fa-angle-left"></i></a></li>
+
+                    <!-- <li class=""><a href="">showing</a></li> -->
+                    <li class="page-item disabled"><a class="page-link"href="">showing</a></li>
+                    <li class="page-item disabled"><a class="page-link"href="">1</a></li>
+                    <li class="page-item disabled"><a class="page-link"href="">of 15 pages</a></li>
+                    <li class="page-item "><a class="page-link" href=""><i class="fas fa-angle-right"></i></a></li>
+                    <li class="page-item "><a class="page-link" href=""><i class="fas fa-angle-double-right"></i></a></li>
+
+    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
